@@ -53,9 +53,10 @@
     <UnityVersion>2020.3.27f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\PlayerController.cs" />
-    <Compile Include="Assets\Script\PlayerMovemet.cs" />
-    <Compile Include="Assets\Script\AiPatrol.cs" />
+    <Compile Include="Assets\Script\Player\PlayerController.cs" />
+    <Compile Include="Assets\Script\Player\PlayerMovemet.cs" />
+    <Compile Include="Assets\Script\Ai\AiPatrol.cs" />
+    <Compile Include="Assets\Script\Ai\AiChase.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
