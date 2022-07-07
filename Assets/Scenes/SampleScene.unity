@@ -712,7 +712,7 @@ GameObject:
   m_Component:
   - component: {fileID: 593953077}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: LeftEdge
   m_TagString: Untagged
   m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -742,7 +742,7 @@ GameObject:
   m_Component:
   - component: {fileID: 770786862}
   m_Layer: 0
-  m_Name: checkbox
+  m_Name: CheckBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -803,7 +803,7 @@ GameObject:
   - component: {fileID: 1102498600}
   - component: {fileID: 1102498601}
   m_Layer: 0
-  m_Name: Test
+  m_Name: EnemyPatrolArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -993,7 +993,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1758303753}
   m_Layer: 0
-  m_Name: GameObject (1)
+  m_Name: RightEdge
   m_TagString: Untagged
   m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
