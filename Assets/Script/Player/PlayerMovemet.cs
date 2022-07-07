@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovemet : MonoBehaviour
 {
     public PlayerController controller;
-
+    
     public float runSpeed = 20.0f;
     float horizontalMove = 0.0f;
 

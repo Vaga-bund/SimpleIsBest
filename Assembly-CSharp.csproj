@@ -54,9 +54,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\Player\PlayerController.cs" />
+    <Compile Include="Assets\Script\Status\Health.cs" />
+    <Compile Include="Assets\Script\Enemy\MeleeEnemy.cs" />
     <Compile Include="Assets\Script\Player\PlayerMovemet.cs" />
-    <Compile Include="Assets\Script\Ai\AiPatrol.cs" />
-    <Compile Include="Assets\Script\Ai\AiChase.cs" />
+    <Compile Include="Assets\Script\Enemy\EnemyPatrol.cs" />
+    <Compile Include="Assets\Script\Enemy\EnemyBehaviour.cs" />
+    <Compile Include="Assets\Script\Enemy\EnemyRange.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
