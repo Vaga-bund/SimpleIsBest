@@ -41,8 +41,7 @@ public class MeleeEnemy : MonoBehaviour
             {
                 //Attack
                 cooldownTimer = 0;
-                //anim.SetTrigger("");
-                Debug.Log("Attack");
+                anim.SetTrigger("meleeAttack");
             }
         }
         else
@@ -82,6 +81,7 @@ public class MeleeEnemy : MonoBehaviour
         {
             //Damage Player
             playerHealth.TakeDamage(damage);
+            Debug.Log(playerHealth.currentHealth);
         }
     }
 }
