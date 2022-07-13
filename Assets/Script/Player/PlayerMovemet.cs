@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class PlayerMovemet : MonoBehaviour
 {
-    public PlayerController controller;
+    [Header("Controller")]
+    [SerializeField] private PlayerController controller;
+
+    [Header("Animator")]
+    [SerializeField] private Animator animator;
     
+    [Header("Status Paramater")]
     public float runSpeed = 20.0f;
     float horizontalMove = 0.0f;
 
@@ -17,10 +22,13 @@ public class PlayerMovemet : MonoBehaviour
         // Input left, right Check
         horizontalMove = Input.GetAxis("Horizontal") * runSpeed;
 
+        animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
+
         // Input jump
         if(Input.GetButtonDown("Jump"))
         {
             isJumping = true;
+            animator.SetBool("IsJumping", true);
         }
 
         // Input Crouch
@@ -32,6 +40,17 @@ public class PlayerMovemet : MonoBehaviour
         {
             isCrouching = false;
         }
+
+    }
+
+    public void OnLanding()
+    {
+        animator.SetBool("IsJumping", false);
+    }
+
+    public void OnCrouching()
+    {
+        animator.SetBool("IsCrouching", isCrouching);
     }
 
     private void FixedUpdate()

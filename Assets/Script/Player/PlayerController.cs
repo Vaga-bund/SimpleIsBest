@@ -23,7 +23,6 @@ public class PlayerController : MonoBehaviour
 
 	[Header("Events")]
 	[Space]
-
 	public UnityEvent OnLandEvent;
 
 	[System.Serializable]
@@ -64,7 +63,7 @@ public class PlayerController : MonoBehaviour
 
 	public void Move(float move, bool crouch, bool jump)
 	{
-		/*
+		
 		// If crouching, check to see if the character can stand up
 		if (!crouch)
 		{
@@ -74,7 +73,7 @@ public class PlayerController : MonoBehaviour
 				crouch = true;
 			}
 		}
-		*/
+		
 		//only control the player if grounded or airControl is turned on
 		if (m_Grounded || m_AirControl)
 		{
