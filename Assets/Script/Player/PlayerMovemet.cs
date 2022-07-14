@@ -16,7 +16,12 @@ public class PlayerMovemet : MonoBehaviour
 
     private bool isJumping = false;
     private bool isCrouching = false;
-    // Update is called once per frame
+
+    private Rigidbody2D rb;
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
     void Update()
     {
         // Input left, right Check
@@ -27,8 +32,8 @@ public class PlayerMovemet : MonoBehaviour
         // Input jump
         if(Input.GetButtonDown("Jump"))
         {
-            isJumping = true;
             animator.SetBool("IsJumping", true);
+            isJumping = true;
         }
 
         // Input Crouch
@@ -41,6 +46,7 @@ public class PlayerMovemet : MonoBehaviour
             isCrouching = false;
         }
 
+        animator.SetFloat("yVelocity", rb.velocity.y);
     }
 
     public void OnLanding()
@@ -55,7 +61,7 @@ public class PlayerMovemet : MonoBehaviour
 
     private void FixedUpdate()
     {
-        // playerControl Move
+        animator.SetBool("IsJumping", !controller.m_Grounded);
         controller.Move(horizontalMove * Time.fixedDeltaTime, isCrouching, isJumping);
         isJumping = false;
     }

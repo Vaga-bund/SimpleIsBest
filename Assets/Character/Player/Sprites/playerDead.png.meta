@@ -1,0 +1,261 @@
+fileFormatVersion: 2
+guid: 7701bcfdd1850194296a37e1a74a5d55
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2420972548279292601
+    second: playerDead_0
+  - first:
+      213: -547578556963203442
+    second: playerDead_1
+  - first:
+      213: -6479048148984004251
+    second: playerDead_2
+  - first:
+      213: -8702386959091638909
+    second: playerDead_3
+  - first:
+      213: 5929172291655911825
+    second: playerDead_4
+  - first:
+      213: 5677078696408664485
+    second: playerDead_5
+  - first:
+      213: 7201952873805474085
+    second: playerDead_6
+  - first:
+      213: 1171608406763739668
+    second: playerDead_7
+  - first:
+      213: -3930513935038146835
+    second: playerDead_8
+  - first:
+      213: -1760739970541550164
+    second: playerDead_9
+  - first:
+      213: 6309865501333922559
+    second: playerDead_10
+  - first:
+      213: 6740067469830624089
+    second: playerDead_11
+  - first:
+      213: 7407164912427511011
+    second: playerDead_12
+  - first:
+      213: -6907490810067638668
+    second: playerDead_13
+  - first:
+      213: 5336743513663010893
+    second: playerDead_14
+  - first:
+      213: -6879305608269526431
+    second: playerDead_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: playerDead_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 111
+        width: 1112
+        height: 1600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b2d82fa4b5099120800000000000000
+      internalID: 2420972548279292601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerDead_1
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 492
+        width: 1625
+        height: 598
+      alignment: 9
+      pivot: {x: 0.5, y: 1.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e865691243c9668f0800000000000000
+      internalID: -547578556963203442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerDead_2
+      rect:
+        serializedVersion: 2
+        x: 3620
+        y: 195
+        width: 1408
+        height: 923
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5610825390cc516a0800000000000000
+      internalID: -6479048148984004251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerDead_14
+      rect:
+        serializedVersion: 2
+        x: 5735
+        y: 294
+        width: 1554
+        height: 438
+      alignment: 9
+      pivot: {x: 0.5, y: 1.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d48f04d43fbef0a40800000000000000
+      internalID: 5336743513663010893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerDead_15
+      rect:
+        serializedVersion: 2
+        x: 7813
+        y: 247
+        width: 1657
+        height: 409
+      alignment: 9
+      pivot: {x: 0.5, y: 1.9}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16a0eb55ffbc780a0800000000000000
+      internalID: -6879305608269526431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

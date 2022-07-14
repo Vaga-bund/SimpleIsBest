@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
 	[SerializeField] private Collider2D m_CrouchDisableCollider;								// 충돌 시 앉은 상태 비활성화
 
 	const float k_GroundedRadius = .2f;																	// Radius of the overlap circle to determine if grounded
-	private bool m_Grounded;																					// 플레이어가 지면에 있는가?
+	[HideInInspector] public bool m_Grounded;														// 플레이어가 지면에 있는가?
 	const float k_CeilingRadius = .2f;																		// 플레이어가 일어날 수 있는 확인하기 위함
 	private Rigidbody2D m_Rigidbody2D;
 	private bool m_FacingRight = true;																		// 플레이어가 현재 향하는 방향
@@ -63,7 +63,6 @@ public class PlayerController : MonoBehaviour
 
 	public void Move(float move, bool crouch, bool jump)
 	{
-		
 		// If crouching, check to see if the character can stand up
 		if (!crouch)
 		{

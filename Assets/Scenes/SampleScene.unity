@@ -256,7 +256,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 89678044}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -7.06, z: 0}
+  m_LocalPosition: {x: 0, y: -5.95, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1815542338}
@@ -1160,6 +1160,7 @@ MonoBehaviour:
   m_GroundCheck: {fileID: 89678045}
   m_CeilingCheck: {fileID: 400008763}
   m_CrouchDisableCollider: {fileID: 1815542334}
+  m_Grounded: 0
   OnLandEvent:
     m_PersistentCalls:
       m_Calls:
@@ -1218,18 +1219,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.049755096, y: 0.59464526}
+  m_Offset: {x: 0.049755096, y: 2.2978032}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 12.33, y: 18.03}
+    pivot: {x: 0.5, y: 1.9}
+    oldSize: {x: 16.57, y: 4.0924997}
     newSize: {x: 12.33, y: 18.03}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.110058, y: 16.538744}
+  m_Size: {x: 6.110058, y: 13.132429}
   m_EdgeRadius: 0
 --- !u!50 &1815542335
 Rigidbody2D:
@@ -1330,7 +1331,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1815542331}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.719, y: 0.032, z: 0}
+  m_LocalPosition: {x: -4.719, y: 0, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_Children:
   - {fileID: 400008763}
@@ -1350,10 +1351,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76647e4831fdbb848a997f17bbd4c6ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 10
-  iFramesDuration: 0
-  numberOfFlashes: 0
-  components: []
+  startingHealth: 2
+  iFramesDuration: 3
+  numberOfFlashes: 1
+  components:
+  - {fileID: 1815542333}
 --- !u!58 &1815542340
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1367,6 +1369,6 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.048566163, y: -4.4197416}
+  m_Offset: {x: -0.048566163, y: -4.2216997}
   serializedVersion: 2
-  m_Radius: 3.283906
+  m_Radius: 3.085864
