@@ -20,7 +20,6 @@ public class MeleeEnemy : MonoBehaviour
     //reference
     private Animator anim;
     private Health playerHealth;
-
     private EnemyPatrol enemyPatrol;
 
     private void Awake()
@@ -78,10 +77,6 @@ public class MeleeEnemy : MonoBehaviour
     private void DamagePlayer()
     {
         if(PlayerInSight())
-        {
-            //Damage Player
             playerHealth.TakeDamage(damage);
-            Debug.Log(playerHealth.currentHealth);
-        }
     }
 }
