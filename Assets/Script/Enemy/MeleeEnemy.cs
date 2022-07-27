@@ -78,5 +78,7 @@ public class MeleeEnemy : MonoBehaviour
     {
         if(PlayerInSight())
             playerHealth.TakeDamage(damage);
+        Debug.Log(playerHealth.currentHealth);
+
     }
 }
