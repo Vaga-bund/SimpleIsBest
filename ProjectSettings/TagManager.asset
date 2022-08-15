@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - DataTerminal
   layers:
   - Default
   - TransparentFX
@@ -17,7 +18,7 @@ TagManager:
   - Player
   - Action
   - Enemy
-  - 
+  - Object
   - 
   - 
   - 
@@ -41,6 +42,9 @@ TagManager:
   m_SortingLayers:
   - name: BackGround
     uniqueID: 2566553619
+    locked: 0
+  - name: Object
+    uniqueID: 319425547
     locked: 0
   - name: Default
     uniqueID: 0

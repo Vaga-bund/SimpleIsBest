@@ -24,6 +24,11 @@ public class PlayerMovemet : MonoBehaviour
     }
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.E))
+        {
+            controller.CheckInteraction();
+        }
+
         // Input left, right Check
         horizontalMove = Input.GetAxis("Horizontal") * runSpeed;
 

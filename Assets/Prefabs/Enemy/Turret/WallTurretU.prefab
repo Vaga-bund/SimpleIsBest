@@ -55,6 +55,14 @@ PrefabInstance:
       propertyPath: direction
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 6856899157556739637, guid: 939c76602da637b4c8da0ba5973334e4, type: 3}
+      propertyPath: m_SortingLayer
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6856899157556739637, guid: 939c76602da637b4c8da0ba5973334e4, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 319425547
+      objectReference: {fileID: 0}
     - target: {fileID: 6856899157556739639, guid: 939c76602da637b4c8da0ba5973334e4, type: 3}
       propertyPath: m_Name
       value: WallTurretU

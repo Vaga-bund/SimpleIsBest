@@ -31,6 +31,10 @@ public class PlayerController : MonoBehaviour
 	public BoolEvent OnCrouchEvent;
 	private bool m_wasCrouching = false;
 
+	[Header("Icon")]
+	public GameObject interactIcon;
+	private Vector2 boxSize = new Vector2(1.0f, 1.0f);
+
 	private void Awake()
 	{
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
@@ -42,7 +46,7 @@ public class PlayerController : MonoBehaviour
 			OnCrouchEvent = new BoolEvent();
 	}
 
-	private void FixedUpdate()
+    private void FixedUpdate()
 	{
 		bool wasGrounded = m_Grounded;
 		m_Grounded = false;
@@ -133,7 +137,6 @@ public class PlayerController : MonoBehaviour
 		}
 	}
 
-
 	private void Flip()
 	{
 		// Switch the way the player is labelled as facing.
@@ -144,4 +147,37 @@ public class PlayerController : MonoBehaviour
 		theScale.x *= -1;
 		transform.localScale = theScale;
 	}
+
+	public void OpenInteractableIcon()
+    {
+		
+		interactIcon.SetActive(true);
+    }
+
+	public void CloseInteractableIcon()
+    {
+		interactIcon.SetActive(false);
+    }
+
+	public void CheckInteraction()
+    {
+		RaycastHit2D[] hits = Physics2D.BoxCastAll(transform.position, boxSize, 0, Vector2.zero);
+
+		if(hits.Length > 0)
+        {
+			foreach (RaycastHit2D rc in hits)
+            {
+				if (rc.collider.tag == "DataTerminal")
+                {
+					rc.IsOpenable();
+                }
+
+				if (rc.IsInteractable())
+                {
+					rc.Interact();
+					return;
+                }
+            }
+        }
+    }
 }
